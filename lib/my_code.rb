@@ -53,7 +53,7 @@ def reduce_to_all_true(source_array)
     end
     i += 1
   end
-  return result.count != 0
+  return result.count == source_array.count
 end
 
 def reduce_to_any_true(source_array)
@@ -66,4 +66,4 @@ def reduce_to_any_true(source_array)
     i += 1
   end
   return has_true
-end 
+end
